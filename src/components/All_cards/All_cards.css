@@ -1,0 +1,25 @@
+.card_display{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin-left: -10px;
+    gap: 10px;
+    row-gap: 30px;
+}
+
+.card_box {
+    width: 100%;
+
+}
+
+@media (max-width: 1064px) {
+    .card_display {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 710px) {
+    .card_display {
+    grid-template-columns:1fr;
+  }
+}
